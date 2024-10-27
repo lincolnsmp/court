@@ -1,0 +1,37 @@
+name: Lawsuit
+description: Sue a player for breaking the rules.
+title: "[Lawsuit]: "
+labels: ["lawsuit"]
+assignees:
+  - httphypixelnet
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your input!
+  - type: input
+    id: "username"
+    attributes:
+      label: Minecraft Username
+      description: What's your Minecraft username?
+      placeholder: ex. void_linxu
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Lawsuit
+      description: Who are you suing and why?
+      placeholder: ex. I want to sue Dima for being bad at the game
+      value: "I want to sue X for Y"
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Please check the following before submitting
+      options:
+        - label: I have checked the current rules and verified that the player I am suing has broken them
+          required: true
+        - label: I will be available for a court session if needed
+          required: true
