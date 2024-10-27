@@ -1,1 +1,3 @@
 # court
+
+[rule]()
